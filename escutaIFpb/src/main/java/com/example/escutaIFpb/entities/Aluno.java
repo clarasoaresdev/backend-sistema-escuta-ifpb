@@ -5,21 +5,23 @@ import java.util.Date;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Entity
-@Table(name="TB_Aluno")
 @Data
+@Entity
+@Table(name = "TB_ALUNO")
 public class Aluno {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
+
     private String nome;
-    private Long cpf;
+    private Integer cpf;
     private Date dataNascimento;
-    private Long matricula;
-    private String email;
+    private Integer matricula;
+    private String email; //serve p notificar quando a resposta chegar, enfim...
     private Cursos nomeCurso;
 
+    public Aluno() {}
 
     public Aluno(AlunoRequestDTO dadosAluno){
         this.nome = dadosAluno.nome();

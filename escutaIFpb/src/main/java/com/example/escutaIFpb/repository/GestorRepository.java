@@ -1,8 +1,8 @@
 package com.example.escutaIFpb.repository;
 
-import com.example.escutaIFpb.entities.Servidor;
+import com.example.escutaIFpb.entities.Gestor;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
-public interface ServidorRepository extends CrudRepository<Servidor, Long>, PagingAndSortingRepository<Servidor, Long> {
+public interface GestorRepository extends CrudRepository<Gestor, Long>, PagingAndSortingRepository<Gestor, Long> {
 }

@@ -1,8 +1,8 @@
 package com.example.escutaIFpb.repository;
 
-import com.example.escutaIFpb.entities.Aluno;
+import com.example.escutaIFpb.entities.Report;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
-public interface SituacaoRepository extends CrudRepository<Aluno, Long>, PagingAndSortingRepository<Aluno, Long> {
+public interface ReportRepository extends CrudRepository<Report, Long>, PagingAndSortingRepository<Report, Long> {
 }
